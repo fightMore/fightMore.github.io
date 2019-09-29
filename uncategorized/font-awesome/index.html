@@ -380,6 +380,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/uncategorized/font-awesome/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/uncategorized/font-awesome/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -403,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  13
+                  17
                 </span>
               
 
@@ -440,7 +450,7 @@
       
 
       
-        <script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">Welcome to my blog, enter password to read.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1/BfCUhb2UxeXLkHestjX70oHCsYaO6A3w6pvgoKMP4Iv2hSG7pC/BjNvPU0hgWhthxkOVKPWCgD7I6Kn2I4hOawzbV1x9jkXxfIQkqKEZSjRA33YI7oGvli0ilfUUFAMKML9QZxWCSf0uZcjkB8Mg1FPK9DyTClUZdWgerrYSINzypHYwz0jq8oVVPi2wx5QMVx4SJ9//dFg== </div>
+        <script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">Welcome to my blog, enter password to read.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19YqcFmqIPsdlMFpZKnhv5oQCPFeqCW4szx/y2y9FXvk6CZOeXhxhFigN3sU/ev/fn/HLVST2W58Zq6PJUtDdO4IIhtYx4wO88jr2EWda9gpkoKiCmwxEFG3TWTK7GzhiTB6WHNrT4VQJNiKJHmJn+uRuRMivAGcBK6Vx3NJ5fI7Z/+BcU3eNdSMB497/2j5wrf6vwrP9xkEg== </div>
       
 	  
 		<div>
@@ -579,7 +589,12 @@
           
 
   
-    <div id="gitalk-container"></div>
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
   
 
 
@@ -941,6 +956,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'fightMore# MUST HAVE, Your Github ID',
+            repo: 'fightMore.github.io',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '6b754d3a698e6f9a4f00d8d33c43fb2dceff87d6',
+            
+                client_id: '3e9bf8f50b71de365107'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
